@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>InterestCalc.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package operations.InterestCalculator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class InterestCalc {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public float simpleInterest(float p,int t,float r){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_6'/>
+6
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_6'>3</a>
+<span>
+1. simpleInterest : Replaced float multiplication with division &rarr; KILLED<br/>
+2. simpleInterest : Replaced float multiplication with division &rarr; KILLED<br/>
+3. simpleInterest : Replaced float division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return (p*t*r)/100;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double compundInterest(float p,int t,float r,int n){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_9'/>
+9
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_9'>6</a>
+<span>
+1. compundInterest : Replaced integer multiplication with division &rarr; SURVIVED<br/>
+2. compundInterest : Replaced float division with multiplication &rarr; KILLED<br/>
+3. compundInterest : Replaced float addition with subtraction &rarr; KILLED<br/>
+4. compundInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+5. compundInterest : Replaced double subtraction with addition &rarr; KILLED<br/>
+6. compundInterest : removed call to java/lang/Math::pow &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return p * (Math.pow((1 + r/100), (t * n))) - p;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b961e2_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b961e2_6'>6</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_6'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>simpleInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testSimpleInterest()]</span></span> Replaced float multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>simpleInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testSimpleInterest()]</span></span> Replaced float multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>simpleInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testSimpleInterest()]</span></span> Replaced float division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b961e2_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b961e2_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compundInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testCompundInterest()]</span></span> Replaced float division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compundInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testCompundInterest()]</span></span> Replaced float addition with subtraction &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>compundInterest<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>compundInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testCompundInterest()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>compundInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testCompundInterest()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>compundInterest<br/><b>Killed by : </b>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testCompundInterest()]</span></span> removed call to java/lang/Math::pow &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NON_VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testCompundInterest()] (26 ms)</li><li>operations.InterestCalculator.TestInterestCalc.[engine:junit-jupiter]/[class:operations.InterestCalculator.TestInterestCalc]/[method:testSimpleInterest()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.9.11
+
+</body>
+</html>
